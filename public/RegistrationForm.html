@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friendship Zone!</title>
+</head>
+
+<body>
+    <header>
+        <div id="friends-banner">
+            <img src="../assets/images/friends-img.jpg" alt="friends image" width="100%" height="500">
+        </div>
+        <div id="main-header">
+            <h1 style="text-align: center;">Friendship Zone</h1>
+            <hr />
+        </div>
+    </header>
+    <main>
+        <h2>Add your details to register</h2>
+        <form action="./RegistrationConfirmation.html" name="register-form">
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" pattern="[a-zA-Z]{3,}" required
+                title="Please enter alphabets and minimum 3 characters" /><br /><br />
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" /><br /><br />
+            <label for="age">Age :</label>
+            <input type="number" name="age" id="age" min="18" pattern="[0-9]" /><br /><br />
+            <label for="birth-day">Birth Day :</label>
+            <input type="date" name="birthDay" id="birth-day" /><br /><br />
+            <span>Gender:</span>
+            <input type="radio" name="gender" id="male" value="male" /><label for="male">M</label>
+            <input type="radio" name="gender" id="female" value="female" /><label for="female">F</label><br /><br />
+            <label for="about">About:</label>
+            <textarea name="about" id="about" cols="30" rows="5"></textarea><br /><br />
+            <label for="phone">Phone :</label>
+            <input type="tel" id="phone" name="phone" maxlength="10"><br /><br />
+            <label for="interested">Interested :</label>
+            <input type="checkbox" name="friendship" id="friendship"><label for="friendship">Friendship</label>
+            <input type="checkbox" name="dating" id="dating"><label for="dating">Dating</label><br /><br />
+            <label for="attachment">Attachment :</label>
+            <input type="file" name="attachment" id="attachment"><br /><br />
+            <input type="submit" value="Register"> &nbsp;
+            <input type="submit" value="Register as Admin" formaction="./RegistrationConfirmationforAdmin.html"
+                formnovalidate>
+        </form>
+    </main>
+    <footer>
+        <hr />
+        <div>
+            <h4>Follow us on</h4>
+            <ul>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+            </ul>
+            <span>All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
